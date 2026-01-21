@@ -15,7 +15,7 @@ namespace Sonsimulasiya.Configurations
 
             builder.ToTable(options =>
             {
-                options.HasCheckConstraint("CK_Products_Price", "[Price]>0");
+                options.HasCheckConstraint("CK_Products_Price", "[Price]>=0");
             });
             
 
